@@ -2,8 +2,9 @@ import React, {} from "react";
 import TodoCard from './TodoCard'
 import Typography from '@mui/material/Typography';
 
-function Groceries( { todos, onTodoDelete, updateTodo }) {
-    const filteredTodos = todos.filter(todo => todo.category.name === 'groceries') 
+function Groceries( { todos, onTodoDelete, updateTodo, user }) {
+    const userTodos = todos.filter(todo => todo.user.id === user.id)
+    const filteredTodos = userTodos.filter(todo => todo.category.name === 'groceries') 
     const renderTodosList = filteredTodos.map(todo => <TodoCard todo={todo} key={todo.id} onTodoDelete={onTodoDelete} updateTodo={updateTodo}/>)
 
     return (

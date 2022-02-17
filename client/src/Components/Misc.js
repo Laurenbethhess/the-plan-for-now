@@ -2,8 +2,9 @@ import React, {} from "react";
 import TodoCard from './TodoCard'
 import Typography from '@mui/material/Typography';
 
-function Misc( { todos, onTodoDelete, updateTodo }) {
-    const filteredTodos = todos.filter(todo => todo.category.name === 'misc') 
+function Misc( { todos, onTodoDelete, updateTodo, user }) {
+    const userTodos = todos.filter(todo => todo.user.id === user.id)
+    const filteredTodos = userTodos.filter(todo => todo.category.name === 'misc') 
     const renderTodosList = filteredTodos.map(todo => <TodoCard todo={todo} key={todo.id} onTodoDelete={onTodoDelete} updateTodo={updateTodo}/>)
 
     return (

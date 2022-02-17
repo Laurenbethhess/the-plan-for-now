@@ -9,7 +9,7 @@ function Work( { todos, onTodoDelete, updateTodo, user }) {
 
     return (
         <div align='center' style={{ paddingTop: 250}}>
-            <Typography style={{fontSize: 20, fontFamily: "Courier"}} variant="p" gutterBottom component="div">
+            <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} variant="p" gutterBottom component="div">
                 Work
             </Typography>
             {renderTodosList}

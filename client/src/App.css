@@ -1,22 +1,18 @@
-.body {
-  background-color: #FFFFF3;
-}
-
 .red {
   color: red;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'sans-serif New', sans-serif, monospace;
   font-weight: bold;
 }
 
 .orange {
   color: orange;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'sans-serif New', sans-serif, monospace;
   font-weight: bold;
 }
 
 .green {
   color: green;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'sans-serif New', sans-serif, monospace;
   font-weight: bold;
 }
 

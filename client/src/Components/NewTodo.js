@@ -19,7 +19,7 @@ function NewTodo({ onAddTodo, user }) {
     function handleSubmit(e) {
       e.preventDefault()
   
-      fetch("/todos", {
+      fetch("/todos/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

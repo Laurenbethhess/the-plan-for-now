@@ -8,7 +8,7 @@ function Groceries( { todos, onTodoDelete, updateTodo, user }) {
     const renderTodosList = filteredTodos.map(todo => <TodoCard todo={todo} key={todo.id} onTodoDelete={onTodoDelete} updateTodo={updateTodo}/>)
 
     return (
-        <div align='center' style={{ paddingTop: 100}}>
+        <div align='center' style={{ paddingTop: 250}}>
             <Typography style={{fontSize: 20, fontFamily: "Courier"}} variant="p" gutterBottom component="div">
                 Groceries
             </Typography>

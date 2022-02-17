@@ -10,6 +10,7 @@ import Exercise from './Components/Exercise'
 import Misc from './Components/Misc'
 import Groceries from './Components/Groceries'
 import Login from './Components/Login';
+import NewTodo from './Components/NewTodo';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -54,6 +55,7 @@ function App() {
   return (
    <div className="body">
       <Nav user={user} onLogout={setUser}/>
+      <NewTodo align='center' onAddTodo={handleAddTodo} user={user} />
       <Routes >
         <Route path="/" element={<Home updateTodo={handleUpdateTodo} todos={todos} onTodoDelete={handleDeleteItem} onAddTodo={handleAddTodo} user={user} />}/>
         <Route path="/school" element={<School user={user} updateTodo={handleUpdateTodo} todos={todos} onTodoDelete={handleDeleteItem} onAddTodo={handleAddTodo}/>}/>

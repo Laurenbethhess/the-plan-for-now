@@ -43,7 +43,7 @@ function Signup({ onLogin }) {
     return (
         <div>
               <Card align='center' sx={{ minWidth: 275 }} style={{backgroundColor: "#B1DFB0"}}>
-              <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} align='center' variant="p" gutterBottom component="div">
+              <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} align='center' variant="p" gutterBottom component="div">
                 Create an account
               </Typography> 
                 <CardContent align='center'>

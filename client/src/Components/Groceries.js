@@ -9,7 +9,7 @@ function Groceries( { todos, onTodoDelete, updateTodo, user }) {
 
     return (
         <div align='center' style={{ paddingTop: 250}}>
-            <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} variant="p" gutterBottom component="div">
+            <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} variant="p" gutterBottom component="div">
                 Groceries
             </Typography>
             {renderTodosList}

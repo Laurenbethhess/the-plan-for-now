@@ -28,7 +28,7 @@ function TodoCard({todo, onTodoDelete, updateTodo}) {
         <div align='center' >
             <Card sx={{ maxWidth: 350 }} style={{backgroundColor: "#F5FFB9"}}>
                 <CardContent>
-                    <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} align='center' variant="p" gutterBottom component="div">
+                    <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} align='center' variant="p" gutterBottom component="div">
                     {todo.importance == 1 ? (
                         <div className="red">
                             {todo.todo.toLowerCase()}

@@ -42,7 +42,7 @@ function Login({ onLogin }) {
     {showLogin ? (
       <div>
         <Card align='center' sx={{paddingTop: 2, minWidth: 600 }} style={{backgroundColor: "#B1DFB0"}}>
-          <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} align='center' variant="p" gutterBottom component="div">
+          <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} align='center' variant="p" gutterBottom component="div">
             Please Login
           </Typography>       
           <CardContent align='center'>
@@ -93,7 +93,7 @@ function Login({ onLogin }) {
       <div>
         <Card sx={{ minWidth: 275 }} style={{backgroundColor: "#B1DFB0"}}>
                 <CardContent>
-                    <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} align='center' variant="p" gutterBottom component="div">
+                    <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} align='center' variant="p" gutterBottom component="div">
                       <Signup onLogin={onLogin} />
                       Already have an account? &nbsp;
                       <Button variant="outlined" onClick={() => setShowLogin(true)}>

@@ -46,11 +46,11 @@ function NewTodo({ onAddTodo, user }) {
     return (
       <div align='center'>
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar style={{top: 65, backgroundColor: "#2702B9"}} position="fixed">
+          <AppBar style={{top: 65, backgroundColor: "#88D1D1"}} position="fixed">
 
             <Card  style={{backgroundColor: "#CAFFB7"}}>
               <CardContent>
-                  <Typography style={{fontSize: 20, fontFamily: "sans-serif"}} align='center' variant="p" gutterBottom component="div">
+                  <Typography style={{fontSize: 20, fontFamily: "Papyrus"}} align='center' variant="p" gutterBottom component="div">
                     Create New Todo!
                   </Typography>       
                   <Typography >

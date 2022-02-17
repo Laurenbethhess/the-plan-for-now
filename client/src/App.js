@@ -16,7 +16,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    fetch("https://the-plan-for-now.herokuapp.com/todos/")
+    fetch("/todos/")
     .then(r => r.json())
     .then(todos => setTodos(todos))
   }, [])

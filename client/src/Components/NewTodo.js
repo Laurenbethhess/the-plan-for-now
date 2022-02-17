@@ -19,7 +19,7 @@ function NewTodo({ onAddTodo, user }) {
     function handleSubmit(e) {
       e.preventDefault()
   
-      fetch("https://the-plan-for-now.herokuapp.com/todos/", {
+      fetch("/todos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

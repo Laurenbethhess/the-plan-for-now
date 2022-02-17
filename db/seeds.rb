@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "🌱 Seeding todos.........."
+
+Category.destroy_all
+
+Category.create(id: 0, name: "not assigned")
+Category.create(id: 1, name: "chores")
+Category.create(id: 2, name: "work")
+Category.create(id: 3, name: "exercise")
+Category.create(id: 4, name: "misc")
+Category.create(id: 5, name: "groceries")
+Category.create(id: 6, name: "school")
+
+puts "✅ Done seeding!"
